@@ -155,7 +155,7 @@
                                         if (count($group) > 0) {
                                             echo '<optgroup label="' . $group_label . '">';
                                             foreach($group as $service) {
-                                                echo '<option value="' . $service['id'] . '">' 
+                                                echo '<option value="' . $service['id'] .start_date_time '">' 
                                                     . $service['name'] . '</option>';
                                             }
                                             echo '</optgroup>';
@@ -187,7 +187,7 @@
                 </div>
                 
                 <div class="control-group">
-                    <label for="end-datetime" class="control-label"><?php echo $this->lang->line('start_date_time'); ?></label>
+                    <label for="end-datetime" class="control-label"><?php echo $this->lang->line('end_date_time'); ?></label>
                     <div class="controls">
                         <input type="text" id="end-datetime" />
                     </div>
